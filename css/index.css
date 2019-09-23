@@ -216,6 +216,7 @@ html {
   justify-content: space-around;
   align-items: center;
   position: absolute;
+  width: 72%;
 }
 .navPop {
   cursor: pointer;
