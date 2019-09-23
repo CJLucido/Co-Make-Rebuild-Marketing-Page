@@ -129,9 +129,6 @@ html {
   font-size: 62.5%;
   height: 100vh;
 }
-h1 {
-  font-size: 4rem;
-}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -176,73 +173,98 @@ html {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
-}
-.leftDesktop .issuesSolved {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-items: flex-end;
-  width: 100%;
-  padding: 2rem;
-  color: #A89996;
-  font-family: Tahoma;
-  font-size: 4.5rem;
-  font-weight: 700;
-  letter-spacing: 6.8px;
-  background-color: #5d4640;
-  height: 100vh;
-}
-.singleCoMaker {
-  width: 11%;
-  margin-left: 8%;
-}
-#mainImage {
-  position: relative;
-  z-index: -10;
-  width: 100%;
-  height: 90%;
-  padding: 0;
-  margin: 0;
-}
-.mainHeader {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  width: 72%;
-}
-.mainHeader .bigHeader {
-  opacity: 0.23;
-  z-index: 4;
-  width: 100%;
-  max-width: 100%;
-  height: 21.5rem;
-  font-family: "Segoe UI";
-  font-size: 17rem;
-  font-style: italic;
-  font-weight: 900;
-  line-height: 26.5rem;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  white-space: nowrap;
-}
-.mainHeader .miniHeader {
-  z-index: 4;
-  font-family: "Segoe UI";
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 600;
-  line-height: 4rem;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  margin-left: 12%;
+
 }
 .rightDesktop {
   width: 27%;
   height: 100%;
   background: #875140;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.topLogo {
+  width: 60%;
+  margin: 10px auto;
+}
+.textBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #857774;
+  border-radius: 30px;
+  border: 3px solid black;
+  font-family: "Palatino Linotype";
+  font-weight: 900;
+  width: 90%;
+  height: 30%;
+  padding: 20px 0;
+  margin: 20px auto;
+}
+.textBox h2 {
+  font-size: 6rem;
+  text-align: center;
+  padding: 10px 0;
+  width: 90%;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #857774;
+  border-radius: 30px;
+  border: 3px solid black;
+  width: 90%;
+  height: 30%;
+  padding: 20px 0;
+  margin: 20px auto;
+}
+.testimonials img {
+  width: 40%;
+  border-radius: 100px;
+  border: 4px solid white;
+  margin: 10px auto;
+}
+.testimonials p {
+  width: 80%;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: "Palatino Linotype";
+  line-height: 3.9rem;
+}
+.signUpButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+.signUpButton button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 10% 0;
+  padding: 0;
+  background: #da9f7a;
+  border: 3px solid black;
+  border-radius: 30px;
+  font-size: 6rem;
+  font-family: "Palatino Linotype";
+  font-weight: 900;
+  line-height: 5rem;
+  width: 90%;
+  height: 80%;
+}
+.signUpButton button img {
+  width: 20%;
+}
+button:hover {
+  background: #857774;
 }
 .navBar {
   display: flex;
