@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,15 +12,58 @@
   <body>
     <div class="container">
       <div class="leftDesktop">
-        <div class="navBar">
-          <h1 class="navItem">Cities</h1>
-          <h1 class="navItem">About</h1>
-          <h1 class="navItem">Partners</h1>
-          <h1 class="navItem">Contact Us</h1>
-        </div>
+        <img src="..\Marketing-Page\images\Background-1.jpg" id="mainImage" alt="Suburbia at sunrise seen from above looking outwards">
+        <nav class="navBar">
+          <a href=# class="navPop">CITIES</a>
+          <!-- <div class="navPop" onclick="showPop1()">Cities -->
+            <!-- <span class="popupText" id="cityPop">
+              <h3>Communities that are using this App include:</h3>
+              <ul>
+                <li>Los Angeles, CA</li>
+                <li>Russellville, AR</li>
+                <li>White Plains, NY</li>
+                <li>Marianna, FL</li>
+                <li>Eugene, OR</li>
+                <li>Havre, MT</li>
+              </ul>
+            </span>
+          </div> -->
+          <a href="#" class="navPop">ABOUT</a>
+          <!-- <div class="navPop" onclick="showPop2()">About
+            <span class="popupText" id="aboutPop">
+              <h3>A bit about us:</h3>
+              <p>We started as a small group project in the fall of 2019 and ended up impacting hundreds of people by fullfilling a simple need, the need to be heard.</p>
+            </span>
+          </div> -->
+          <a href="#" class="navPop">PARTNERS</a>
+          <!-- <div class="navPop" onclick="showPop3()">Partners
+            <span class="popupText" id="partnerPop">
+              <h3>Here are some companies we collaborate with:</h3>
+              <ul>
+                <li>Google</li>
+                <li>GoPro</li>
+                <li>Fitbit</li>
+                <li>Lowes</li>
+              </ul>
+            </span>
+          </div> -->
+          <a href="#" class="navPop">CONTACT US</a>
+          <!-- <div class="navPop" onclick="showPop4()">Contact Us
+            <span class="popupText" id="contactPop">
+              <h3>Contact us</h3>
+              <p>You can reach us at:</p>
+              <p>PublicRelations@comakers.com</p>
+              <p>1-800-Woa-Nely</p>
+              <p>or by mail at:</p>
+              <p>123 Weeee! Street</p>
+              <p>Funtown, FunFun 00000</p>
+            </span>
+          </div> -->
+        </nav>
         <div class="mainHeader">
           <h1 class="bigHeader">Co-Make</h1>
           <h2 class="miniHeader">What's your community prioritizing?</h2>
+          <img class="singleCoMaker" src="..\Marketing-Page\images\PNGlogo.png" alt="Strange one eyed Co-make logo looks over city and send out thoughts">
         </div>
         <div class="issuesSolved">
           <h1>Issues solved:</h1>
@@ -27,23 +72,40 @@
       </div>
       <div class="rightDesktop">
         <div class="topLogo">
-          <img src="images\Untitled-2.png" alt="" />
+          <img src="" alt="" />
         </div>
         <div class="textBox">
           <h2>SEE AN ISSUE? HAVE YOUR VOICE HEARD AND EFFORTS REWARDED</h2>
         </div>
         <div class="testimonials">
-          <img src="images\garden-project.jpg" alt="Person Picture" />
-          <p>"Great tool! Easy to use and made me feel like I had a voice."</br>-Brandon Teague</p>
+          <img src="" alt="" />
+          <h3>orengiudnrgisrnbguisrngisngunsut</h3>
         </div>
         <div class="signUpButton">
-          <button>
-            Become a</br>Co-Maker
-            <img src="images\Untitled-1.png" alt="" />
-          </button>
+          <button>Become a Co-Maker <img src="" alt="" /></button>
         </div>
       </div>
     </div>
     <!-- Closes Container -->
+
+    <script>
+    function showPop1(){
+      var popup = document.getElementById("cityPop");
+      popup.classList.toggle("show");
+    }
+    function showPop2(){
+      var popup = document.getElementById("aboutPop");
+      popup.classList.toggle("show");
+    }
+    function showPop3(){
+      var popup = document.getElementById("partnerPop");
+      popup.classList.toggle("show");
+    }
+    function showPop4(){
+      var popup = document.getElementById("contactPop");
+      popup.classList.toggle("show");
+    }
+    </script>
   </body>
 </html>
+

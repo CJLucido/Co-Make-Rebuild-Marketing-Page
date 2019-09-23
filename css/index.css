@@ -170,9 +170,10 @@ html {
   width: 73%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
+
 }
 .rightDesktop {
   width: 27%;
@@ -270,4 +271,61 @@ button:hover {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  align-self: flex-start;
+  position: absolute;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  padding-right: 0.7rem;
+  margin-top: 2.5rem;
+  margin-left: 5%;
+  background-color: #857774;
+  border-radius: 19px;
+  line-height: 4rem;
+}
+.navPop {
+  z-index: 5;
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Palatino Linotype";
+}
+.navPop:hover {
+  color: #FE876D;
+}
+/* The actual popup */
+.navPop .popuptext {
+  visibility: hidden;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  overflow-wrap: nowrap;
+}
+/* Popup arrow */
+.navPop .popuptext::after {
+  content: "";
+  position: absolute;
+}
+/* Toggle this class - hide and show the popup */
+.navPop .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1 ;
+  }
 }
