@@ -185,6 +185,13 @@ html {
   align-items: flex-start;
   width: 100%;
   padding: 0.7rem;
+  color: #A89996;
+  font-family: Tahoma;
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 6.8px;
+  background-color: #5d4640;
+  height: 100vh;
 }
 #mainImage {
   position: relative;
@@ -238,11 +245,14 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  align-self: flex-start;
   position: absolute;
   width: 50%;
   padding: 0;
   margin: 0;
-  margin-top: 3rem;
+  padding-right: 0.7rem;
+  margin-top: 2.5rem;
+  margin-left: 5%;
   background-color: #857774;
   border-radius: 19px;
   line-height: 4rem;
