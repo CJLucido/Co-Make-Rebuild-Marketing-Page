@@ -193,6 +193,10 @@ html {
   background-color: #5d4640;
   height: 100vh;
 }
+.singleCoMaker {
+  width: 11%;
+  margin-left: 8%;
+}
 #mainImage {
   position: relative;
   z-index: -10;
