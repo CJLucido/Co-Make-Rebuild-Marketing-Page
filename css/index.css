@@ -229,7 +229,6 @@ html {
 }
 .mainHeader .miniHeader {
   z-index: 4;
-  width: 100%;
   font-family: "Segoe UI";
   font-size: 3rem;
   font-style: italic;
