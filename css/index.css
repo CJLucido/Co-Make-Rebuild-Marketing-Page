@@ -266,6 +266,9 @@ html {
   font-size: 2rem;
   font-family: "Palatino Linotype";
 }
+.navPop:hover {
+  color: #FE876D;
+}
 /* The actual popup */
 .navPop .popuptext {
   visibility: hidden;
