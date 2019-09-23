@@ -195,15 +195,28 @@ html {
   opacity: 0.23;
   z-index: 4;
   width: 100%;
-  height: 328px;
+  height: 21.5rem;
   font-family: "Segoe UI";
   font-size: 17rem;
   font-style: italic;
   font-weight: 900;
-  line-height: 382px;
+  line-height: 26.5rem;
   text-align: center;
   padding: 0;
   margin: 0;
+}
+.mainHeader .miniHeader {
+  z-index: 4;
+  width: 100%;
+  font-family: "Segoe UI";
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 4rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 12%;
 }
 .rightDesktop {
   width: 27%;
@@ -235,6 +248,10 @@ html {
   overflow-wrap: normal;
 }
 /* Popup arrow */
+.navPop .popuptext::after {
+  content: "";
+  position: absolute;
+}
 /* Toggle this class - hide and show the popup */
 .navPop .show {
   visibility: visible;
