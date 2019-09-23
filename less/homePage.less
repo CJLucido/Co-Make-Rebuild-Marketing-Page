@@ -54,6 +54,10 @@
 .navPop {
   cursor: pointer;
  width: 25%;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
 }
 
 /* The actual popup */
@@ -74,4 +78,6 @@
 /* Toggle this class - hide and show the popup */
 .navPop .show {
   visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
 }
