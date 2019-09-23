@@ -129,9 +129,6 @@ html {
   font-size: 62.5%;
   height: 100vh;
 }
-h1 {
-  font-size: 4rem;
-}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -198,6 +195,8 @@ html {
   background: #857774;
   border-radius: 30px;
   border: 3px solid black;
+  font-family: "Palatino Linotype";
+  font-weight: 900;
   width: 90%;
   height: 30%;
   padding: 20px 0;
@@ -232,6 +231,8 @@ html {
   width: 80%;
   font-size: 3.5rem;
   text-align: center;
+  font-family: "Palatino Linotype";
+  line-height: 3.9rem;
 }
 .signUpButton {
   display: flex;
@@ -251,7 +252,10 @@ html {
   background: #da9f7a;
   border: 3px solid black;
   border-radius: 30px;
-  font-size: 5rem;
+  font-size: 6rem;
+  font-family: "Palatino Linotype";
+  font-weight: 900;
+  line-height: 5rem;
   width: 90%;
   height: 80%;
 }
