@@ -221,6 +221,7 @@ html {
   text-align: center;
   padding: 0;
   margin: 0;
+  white-space: nowrap;
 }
 .mainHeader .miniHeader {
   z-index: 4;
@@ -258,6 +259,7 @@ html {
   line-height: 4rem;
 }
 .navPop {
+  z-index: 5;
   cursor: pointer;
   width: 25%;
   text-align: center;
@@ -270,7 +272,7 @@ html {
   color: #fff;
   position: absolute;
   z-index: 1;
-  overflow-wrap: normal;
+  overflow-wrap: nowrap;
 }
 /* Popup arrow */
 .navPop .popuptext::after {

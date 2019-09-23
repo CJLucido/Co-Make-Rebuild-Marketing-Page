@@ -47,6 +47,7 @@
     line-height: 26.5rem; //move bigheader up and down
     text-align: center;
     .noBorder();
+    white-space: nowrap;
   }//end of bigHeader
 
   .miniHeader {
@@ -87,6 +88,7 @@
 }
 
 .navPop {
+  z-index: 5;
   cursor: pointer;
  width: 25%;
  text-align: center;
@@ -105,7 +107,7 @@
   color: #fff;
   position: absolute;
   z-index: 1;
-  overflow-wrap: normal;
+  overflow-wrap: nowrap;
 }
 
 /* Popup arrow */
