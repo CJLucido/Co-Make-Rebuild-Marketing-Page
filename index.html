@@ -10,8 +10,9 @@
   <body>
     <div class="container">
       <div class="leftDesktop">
+        <img src="..\Marketing-Page\images\Background-1.jpg" id="mainImage" alt="Suburbia at sunrise seen from above looking outwards">
         <div class="navBar">
-          <div class="navPop" onclick="showPop()">Cities
+          <div class="navPop" onclick="showPop1()">Cities
             <span class="popupText" id="cityPop">
               <h3>Communities that are using this App include:</h3>
               <ul>
@@ -24,13 +25,13 @@
               </ul>
             </span>
           </div>
-          <div class="navPop" onclick="showPop()">About
+          <div class="navPop" onclick="showPop2()">About
             <span class="popupText" id="aboutPop">
               <h3>A bit about us:</h3>
               <p>We started as a small group project in the fall of 2019 and ended up impacting hundreds of people by fullfilling a simple need, the need to be heard.</p>
             </span>
           </div>
-          <div class="navPop" onclick="showPop()">Partners
+          <div class="navPop" onclick="showPop3()">Partners
             <span class="popupText" id="partnerPop">
               <h3>Here are some companies we collaborate with:</h3>
               <ul>
@@ -41,7 +42,7 @@
               </ul>
             </span>
           </div>
-          <div class="navPop" onclick="showPop()">Contact Us
+          <div class="navPop" onclick="showPop4()">Contact Us
             <span class="popupText" id="contactPop">
               <h3>Contact us</h3>
               <p>You can reach us at:</p>
@@ -79,5 +80,24 @@
       </div>
     </div>
     <!-- Closes Container -->
+
+    <script>
+    function showPop1(){
+      var popup = document.getElementById("cityPop");
+      popup.classList.toggle("show");
+    }
+    function showPop2(){
+      var popup = document.getElementById("aboutPop");
+      popup.classList.toggle("show");
+    }
+    function showPop3(){
+      var popup = document.getElementById("partnerPop");
+      popup.classList.toggle("show");
+    }
+    function showPop4(){
+      var popup = document.getElementById("contactPop");
+      popup.classList.toggle("show");
+    }
+    </script>
   </body>
 </html>

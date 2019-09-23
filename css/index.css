@@ -176,7 +176,17 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  background-image: url(images\Background-1.jpg);
+}
+#mainImage {
+  position: relative;
+  z-index: -10;
+  width: 73%;
+  height: 90%;
+  padding: 0;
+  margin: 0;
+}
+.mainHeader {
+  position: absolute;
 }
 .rightDesktop {
   width: 27%;
@@ -188,4 +198,20 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+}
+.navPop {
+  cursor: pointer;
+}
+/* The actual popup */
+.navPop .popuptext {
+  visibility: hidden;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+/* Popup arrow */
+/* Toggle this class - hide and show the popup */
+.navPop .show {
+  visibility: visible;
 }

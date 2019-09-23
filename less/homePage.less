@@ -3,7 +3,21 @@
   width: 73%;
   .display(column, space-between, center);
   height: 100%;
-  background-image: url(images\Background-1.jpg);
+
+}
+
+#mainImage{
+  position: relative;
+  z-index: -10;
+  width: 73%;
+  height: 90%;
+  padding: 0;
+  margin: 0;
+}
+
+.mainHeader {
+  position: absolute;
+  
 }
 
 .rightDesktop {
@@ -16,4 +30,29 @@
 
 .navBar {
   .display(row, space-around, center);
+  position: absolute;
+}
+
+.navPop {
+  cursor: pointer;
+
+}
+
+/* The actual popup */
+.navPop .popuptext {
+  visibility: hidden;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Popup arrow */
+// .navPop .popuptext::after {
+//   content: "";
+//   position: absolute;
+// }
+
+/* Toggle this class - hide and show the popup */
+.navPop .show {
+  visibility: visible;
 }
