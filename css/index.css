@@ -127,7 +127,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  height: 100vh;
+  height: 100%;
 }
 h2 {
   font-size: 3.2rem;
@@ -178,7 +178,7 @@ html {
   top: 0;
   width: 100%;
   /* Full width */
-  height: 100%;
+  height: 90%;
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
@@ -186,6 +186,8 @@ html {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
+  padding: 0;
+  margin: 0;
 }
 /* Modal Content/Box */
 .modal-content {
@@ -289,11 +291,11 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.topLogo {
+.rightDesktop .topLogo {
   width: 60%;
   margin: 10px auto;
 }
-.textBox {
+.rightDesktop .textBox {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -308,13 +310,13 @@ html {
   padding: 20px 0;
   margin: 20px auto;
 }
-.textBox h2 {
+.rightDesktop .textBox h2 {
   font-size: 3rem;
   text-align: center;
   padding: 10px 0;
   width: 90%;
 }
-.testimonials {
+.rightDesktop .testimonials {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -327,28 +329,28 @@ html {
   padding: 20px 0;
   margin: 20px auto;
 }
-.testimonials img {
+.rightDesktop .testimonials img {
   width: 40%;
   border-radius: 100px;
   border: 4px solid white;
   margin: 10px auto;
 }
-.testimonials p {
+.rightDesktop .testimonials p {
   width: 80%;
   font-size: 1.7rem;
   text-align: center;
   font-family: "Palatino Linotype";
   line-height: 3.9rem;
 }
-.signUpButton {
+.rightDesktop .signUpButton {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 20px auto;
+  margin: 20px auto 0px;
 }
-.signUpButton button {
+.rightDesktop .signUpButton button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -365,10 +367,10 @@ html {
   width: 90%;
   height: 80%;
 }
-.signUpButton button img {
+.rightDesktop .signUpButton button img {
   width: 20%;
 }
-button:hover {
+.rightDesktop button:hover {
   background: #857774;
 }
 .navBar {
