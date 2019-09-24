@@ -7,16 +7,21 @@
 
   .issuesSolved {
     .display(row, space-between, center);
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
-    padding: 4vw 4vh 2vw; //changed for responsiveness
+    padding: .5vw .5vh 0vw; //changed for responsiveness
     color: #a89996;
     font-family: Tahoma;
-    font-size: 4.3vw;
+    font-size: 3.5vw;
     font-weight: 700;
     letter-spacing: 6.8px;
     background-color: #5d4640;
     height: 10%; //changed from 100vh
+
+    h1 {
+      max-height: inherit;
+      padding: 0;
+    }
   }
 }
 
@@ -74,8 +79,8 @@
   width: 27%;
   background: #875140;
   .display(column, center, center);
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
+  //max-height: 100vh;
 
   .topLogo {
     width: 40%;
@@ -91,7 +96,7 @@
     width: 90%;
     height: 25%;
     padding: 5% 0;
-    margin: 5% auto;
+    margin: 5% auto 0;
     h2 {
       font-size: 2vw; //changed from 6
       text-align: center;
@@ -106,7 +111,7 @@
     border-radius: 30px;
     border: 3px solid black;
     width: 90%;
-    height: 16vw;
+    height: 15vw;
     padding: 0 0 0 2.5%;
     margin: 5% auto;
     img {
@@ -142,7 +147,7 @@
       font-size: 3vw;
       font-family: "Palatino Linotype";
       font-weight: 900;
-      line-height: 4rem;
+      line-height: 3vw;
       width: 100%;
       //height: 80%;
       height: 20vh;
