@@ -169,6 +169,50 @@ html {
 .container {
   width: 100%;
 }
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 .leftDesktop {
   width: 73%;
   display: flex;
@@ -243,6 +287,92 @@ html {
   width: 27%;
   height: 100%;
   background: #875140;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.topLogo {
+  width: 60%;
+  margin: 10px auto;
+}
+.textBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #857774;
+  border-radius: 30px;
+  border: 3px solid black;
+  font-family: "Palatino Linotype";
+  font-weight: 900;
+  width: 90%;
+  height: 30%;
+  padding: 20px 0;
+  margin: 20px auto;
+}
+.textBox h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px 0;
+  width: 90%;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #857774;
+  border-radius: 30px;
+  border: 3px solid black;
+  width: 90%;
+  height: 30%;
+  padding: 20px 0;
+  margin: 20px auto;
+}
+.testimonials img {
+  width: 40%;
+  border-radius: 100px;
+  border: 4px solid white;
+  margin: 10px auto;
+}
+.testimonials p {
+  width: 80%;
+  font-size: 1.7rem;
+  text-align: center;
+  font-family: "Palatino Linotype";
+  line-height: 3.9rem;
+}
+.signUpButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+.signUpButton button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 10% 0;
+  padding: 0;
+  background: #da9f7a;
+  border: 3px solid black;
+  border-radius: 30px;
+  font-size: 3rem;
+  font-family: "Palatino Linotype";
+  font-weight: 900;
+  line-height: 5rem;
+  width: 90%;
+  height: 80%;
+}
+.signUpButton button img {
+  width: 20%;
+}
+button:hover {
+  background: #857774;
 }
 .navBar {
   display: flex;
