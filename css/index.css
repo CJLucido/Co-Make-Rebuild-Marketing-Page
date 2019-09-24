@@ -127,7 +127,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  height: 100%;
+  height: 100vh;
 }
 h2 {
   font-size: 3.2rem;
@@ -218,7 +218,7 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 .leftDesktop .issuesSolved {
   display: flex;
@@ -228,13 +228,13 @@ html {
   align-items: flex-end;
   width: 100%;
   padding: 2rem;
-  color: #A89996;
+  color: #a89996;
   font-family: Tahoma;
   font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 6.8px;
   background-color: #5d4640;
-  height: 100vh;
+  height: 10%;
 }
 .singleCoMaker {
   width: 11%;
@@ -284,16 +284,16 @@ html {
 }
 .rightDesktop {
   width: 27%;
-  height: 100%;
   background: #875140;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .rightDesktop .topLogo {
-  width: 60%;
-  margin: 10px auto;
+  width: 40%;
+  margin: 5% auto;
 }
 .rightDesktop .textBox {
   display: flex;
@@ -307,13 +307,13 @@ html {
   font-weight: 900;
   width: 90%;
   height: 30%;
-  padding: 20px 0;
-  margin: 20px auto;
+  padding: 5% 0;
+  margin: 5% auto;
 }
 .rightDesktop .textBox h2 {
-  font-size: 3rem;
+  font-size: 2vw;
   text-align: center;
-  padding: 10px 0;
+  padding: 5% 0;
   width: 90%;
 }
 .rightDesktop .testimonials {
@@ -326,14 +326,14 @@ html {
   border: 3px solid black;
   width: 90%;
   height: 30%;
-  padding: 20px 0;
-  margin: 20px auto;
+  padding: 5% 0;
+  margin: 5% auto;
 }
 .rightDesktop .testimonials img {
   width: 40%;
   border-radius: 100px;
   border: 4px solid white;
-  margin: 10px auto;
+  margin: 3% auto;
 }
 .rightDesktop .testimonials p {
   width: 80%;
@@ -347,23 +347,22 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 20px auto 0px;
+  height: 20vh;
+  margin: 5% 0;
 }
 .rightDesktop .signUpButton button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 0 0 10% 0;
   padding: 0;
   background: #da9f7a;
   border: 3px solid black;
   border-radius: 30px;
-  font-size: 3rem;
+  font-size: 3vw;
   font-family: "Palatino Linotype";
   font-weight: 900;
-  line-height: 5rem;
+  line-height: 4rem;
   width: 90%;
   height: 80%;
 }
@@ -399,7 +398,7 @@ html {
   font-family: "Palatino Linotype";
 }
 .navPop:hover {
-  color: #FE876D;
+  color: #fe876d;
 }
 /* The actual popup */
 .navPop .popuptext {
