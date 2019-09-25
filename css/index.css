@@ -238,6 +238,7 @@ html {
   letter-spacing: 6.8px;
   background-color: #5d4640;
   height: 10%;
+  z-index: -1;
 }
 .leftDesktop .issuesSolved h1 {
   max-height: inherit;
@@ -246,6 +247,9 @@ html {
 .singleCoMaker {
   width: 11%;
   margin-left: 8%;
+  position: relative;
+  -webkit-animation: cityComaker 10s infinite;
+  animation: cityComaker 10s  infinite 5s paused;
 }
 #mainImage {
   position: relative;
@@ -399,6 +403,8 @@ html {
   background-color: #857774;
   border-radius: 19px;
   line-height: 4rem;
+  z-index: 5;
+  opacity: 0.7;
 }
 .navPop {
   z-index: 5;
@@ -413,38 +419,45 @@ html {
 .navPop:hover {
   color: #fe876d;
 }
-/* The actual popup */
-.navPop .popuptext {
-  visibility: hidden;
-  color: #fff;
-  position: absolute;
-  z-index: 1;
-  overflow-wrap: nowrap;
-}
-/* Popup arrow */
-.navPop .popuptext::after {
-  content: "";
-  position: absolute;
-}
-/* Toggle this class - hide and show the popup */
-.navPop .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes cityComaker {
   from {
-    opacity: 0;
+    left: initial;
   }
   to {
-    opacity: 1;
+    left: 100px;
   }
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+@keyframes cityComaker {
+  0% {
+    left: 50px;
   }
-  to {
-    opacity: 1 ;
+  10% {
+    left: 100px;
+  }
+  20% {
+    left: 200px;
+  }
+  30% {
+    left: 300px;
+  }
+  40% {
+    left: 400px;
+  }
+  50% {
+    left: 600px;
+  }
+  60% {
+    left: 800px;
+    transform: translateY(100px);
+  }
+  70% {
+    left: 900px;
+  }
+  80% {
+    left: 1000px;
+  }
+  90% {
+    left: 1300px;
+    transform: translateY(100px);
   }
 }

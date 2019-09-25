@@ -17,6 +17,7 @@
     letter-spacing: 6.8px;
     background-color: #5d4640;
     height: 10%; //changed from 100vh
+    z-index: -1;
 
     h1 {
       max-height: inherit;
@@ -28,6 +29,9 @@
 .singleCoMaker {
   width: 11%;
   margin-left: 8%;
+  position: relative;
+  -webkit-animation: cityComaker 10s infinite;
+  animation: cityComaker 10s  infinite 5s paused;
 }
 
 #mainImage {
@@ -177,6 +181,8 @@
   background-color: #857774;
   border-radius: 19px;
   line-height: 4rem;
+  z-index:5;
+  opacity: .7;
 }
 
 .navPop {
@@ -193,30 +199,7 @@
     color: #fe876d;
   }
 
-  //  -webkit-user-select: none;
-  //  -moz-user-select: none;
-  //  -ms-user-select: none;
-  //  user-select: none;
+
 }
 
-/* The actual popup */
-.navPop .popuptext {
-  visibility: hidden;
-  color: #fff;
-  position: absolute;
-  z-index: 1;
-  overflow-wrap: nowrap;
-}
 
-/* Popup arrow */
-.navPop .popuptext::after {
-  content: "";
-  position: absolute;
-}
-
-/* Toggle this class - hide and show the popup */
-.navPop .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
