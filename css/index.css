@@ -378,7 +378,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 }
 @media (max-width: 800px) {
   #aboutModal .aboutRow {
@@ -773,14 +773,6 @@ html {
 }
 .rightDesktop button:hover {
   background: #857774;
-}
-@-webkit-keyframes cityComaker {
-  from {
-    left: initial;
-  }
-  to {
-    left: 100px;
-  }
 }
 @keyframes cityComaker {
   0% {
