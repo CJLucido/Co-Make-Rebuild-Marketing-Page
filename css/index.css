@@ -167,6 +167,7 @@ img {
   .container {
     display: flex;
     flex-direction: column;
+    height: 1200px;
   }
 }
 a {
@@ -209,6 +210,13 @@ html {
     justify-content: space-evenly;
   }
 }
+@media (max-width: 800px) {
+  .navBar {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .navPop {
   z-index: 5;
   cursor: pointer;
@@ -223,6 +231,12 @@ html {
   color: #fe876d;
 }
 @media (max-width: 500px) {
+  .navPop {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+}
+@media (max-width: 800px) {
   .navPop {
     font-size: 3vw;
     font-weight: 900;
@@ -354,12 +368,13 @@ html {
 @media (max-width: 500px) {
   .leftDesktop {
     width: 100%;
-    height: 300px;
+    height: 32%;
   }
 }
 @media (max-width: 800px) {
   .leftDesktop {
     width: 100%;
+    height: 45%;
   }
 }
 .leftDesktop .issuesSolved {
@@ -390,6 +405,11 @@ html {
   animation: cityComaker 10s infinite 5s paused;
 }
 @media (max-width: 500px) {
+  .singleCoMaker {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
   .singleCoMaker {
     display: none;
   }
@@ -441,6 +461,11 @@ html {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .mainHeader .miniHeader {
+    display: none;
+  }
+}
 .rightDesktop {
   width: 27%;
   background: #875140;
@@ -461,10 +486,13 @@ html {
 @media (max-width: 800px) {
   .rightDesktop {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 .rightDesktop .topLogo {
-  width: 40%;
+  width: 30%;
   margin: 5% auto 0;
 }
 .rightDesktop .textBox {
@@ -487,6 +515,11 @@ html {
     height: 30%;
   }
 }
+@media (max-width: 800px) {
+  .rightDesktop .textBox {
+    height: 30%;
+  }
+}
 .rightDesktop .textBox h2 {
   font-size: 2vw;
   text-align: center;
@@ -496,6 +529,11 @@ html {
 @media (max-width: 500px) {
   .rightDesktop .textBox h2 {
     font-size: 8vw;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .textBox h2 {
+    font-size: 7vw;
   }
 }
 .rightDesktop .testimonials {
@@ -514,7 +552,15 @@ html {
 @media (max-width: 500px) {
   .rightDesktop .testimonials {
     height: 30%;
-    margin-top: 10vw;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .testimonials {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
   }
 }
 .rightDesktop .testimonials img {
@@ -527,6 +573,13 @@ html {
 @media (max-width: 500px) {
   .rightDesktop .testimonials img {
     border: 1px solid white;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .testimonials img {
+    border: 1px solid white;
+    height: 80%;
+    margin: auto 0;
   }
 }
 .rightDesktop .testimonials p {
@@ -543,6 +596,12 @@ html {
     line-height: 5vw;
   }
 }
+@media (max-width: 800px) {
+  .rightDesktop .testimonials p {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+}
 .rightDesktop .signUpButton {
   display: flex;
   flex-direction: row;
@@ -554,7 +613,7 @@ html {
 }
 @media (max-width: 500px) {
   .rightDesktop .signUpButton {
-    height: 10%;
+    height: 15%;
     margin-top: 10vw;
   }
 }
@@ -579,6 +638,12 @@ html {
     height: 100%;
     font-size: 10vw;
     line-height: 8vw;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .signUpButton button {
+    font-size: 9vw;
+    line-height: 7vw;
   }
 }
 .rightDesktop .signUpButton button img {
