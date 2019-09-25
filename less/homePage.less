@@ -101,8 +101,9 @@
 
 .rightDesktop {
   width: 27%;
-  background: #875140;
-  .display(column, center, center);
+  border-left: 0.5vw solid black;
+  background: @mainColor;
+  .display(column, space-around, center);
   height: 100%;
   //max-height: 100vh;
   @media @phone {
@@ -118,16 +119,29 @@
     justify-content: flex-start;
   }
 
+  @media @between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
   .topLogo {
-    width: 30%;
-    margin: 5% auto 0;
+    width: 60%;
+    margin: 5% auto;
+    @media @between {
+      width: 65%;
+    }
+    @media @tablet {
+      width: 25%;
+      margin: 2% auto;
+    }
   }
   .textBox {
     .display(row, center, center);
-    background: #857774;
+    background: @textBoxColor;
     border-radius: 30px;
     border: 3px solid black;
-    font-family: "Palatino Linotype";
+    font-family: @mainFont;
     font-weight: 900;
     width: 90%;
     height: 25%;
@@ -138,6 +152,7 @@
     }
     @media @tablet {
       height: 30%;
+      margin: 2% auto;
     }
     h2 {
       font-size: 2vw; //changed from 6
@@ -155,7 +170,7 @@
 
   .testimonials {
     .display(column, space-around, center);
-    background: #857774;
+    background: @textBoxColor;
     border-radius: 30px;
     border: 3px solid black;
     width: 90%;
@@ -167,6 +182,7 @@
     }
     @media @tablet {
       height: 20%;
+      margin: 2% auto;
       display: flex;
       flex-direction: row;
       align-content: center;
@@ -186,13 +202,16 @@
         height: 80%;
         margin: auto 0;
       }
+      @media @between {
+        border: 1px solid white;
+      }
     }
     p {
       width: 80%;
       //height:50%;
       font-size: 1vw; //changed from 3.5
       text-align: center;
-      font-family: "Palatino Linotype";
+      font-family: @mainFont;
       line-height: 2vw;
       max-height: inherit;
       @media @phone {
@@ -215,6 +234,9 @@
       height: 15%;
       margin-top: 10vw;
     }
+    @media @tablet {
+      height: 20%;
+    }
 
     button {
       .display(row, space-around, center);
@@ -224,7 +246,7 @@
       border: 3px solid black;
       border-radius: 30px;
       font-size: 3vw;
-      font-family: "Palatino Linotype";
+      font-family: @mainFont;
       font-weight: 900;
       line-height: 3vw;
       width: 100%;
@@ -236,9 +258,17 @@
         line-height: 8vw;
       }
       @media @tablet {
-        font-size: 9vw;
+        font-size: 7vw;
         line-height: 7vw;
       }
+      @media @between {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        font-size: 4vw;
+      }
+
       img {
         width: 20%;
       }

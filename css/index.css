@@ -468,10 +468,11 @@ html {
 }
 .rightDesktop {
   width: 27%;
+  border-left: 0.5vw solid black;
   background: #875140;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
@@ -491,9 +492,27 @@ html {
     justify-content: flex-start;
   }
 }
+@media (max-width: 1200px) {
+  .rightDesktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 .rightDesktop .topLogo {
-  width: 30%;
-  margin: 5% auto 0;
+  width: 60%;
+  margin: 5% auto;
+}
+@media (max-width: 1200px) {
+  .rightDesktop .topLogo {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .topLogo {
+    width: 25%;
+    margin: 2% auto;
+  }
 }
 .rightDesktop .textBox {
   display: flex;
@@ -518,6 +537,7 @@ html {
 @media (max-width: 800px) {
   .rightDesktop .textBox {
     height: 30%;
+    margin: 2% auto;
   }
 }
 .rightDesktop .textBox h2 {
@@ -557,6 +577,7 @@ html {
 @media (max-width: 800px) {
   .rightDesktop .testimonials {
     height: 20%;
+    margin: 2% auto;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -580,6 +601,11 @@ html {
     border: 1px solid white;
     height: 80%;
     margin: auto 0;
+  }
+}
+@media (max-width: 1200px) {
+  .rightDesktop .testimonials img {
+    border: 1px solid white;
   }
 }
 .rightDesktop .testimonials p {
@@ -617,6 +643,11 @@ html {
     margin-top: 10vw;
   }
 }
+@media (max-width: 800px) {
+  .rightDesktop .signUpButton {
+    height: 20%;
+  }
+}
 .rightDesktop .signUpButton button {
   display: flex;
   flex-direction: row;
@@ -642,8 +673,17 @@ html {
 }
 @media (max-width: 800px) {
   .rightDesktop .signUpButton button {
-    font-size: 9vw;
+    font-size: 7vw;
     line-height: 7vw;
+  }
+}
+@media (max-width: 1200px) {
+  .rightDesktop .signUpButton button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 4vw;
   }
 }
 .rightDesktop .signUpButton button img {
