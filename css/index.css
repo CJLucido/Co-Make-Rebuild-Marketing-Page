@@ -217,7 +217,7 @@ html {
     justify-content: space-evenly;
   }
 }
-.navPop {
+.navBar .navPop {
   z-index: 5;
   cursor: pointer;
   width: 25%;
@@ -227,17 +227,17 @@ html {
   padding: 0.007vw 0.007vh 0.005vw;
   white-space: nowrap;
 }
-.navPop:hover {
+.navBar .navPop:hover {
   color: #fe876d;
 }
 @media (max-width: 500px) {
-  .navPop {
+  .navBar .navPop {
     font-size: 3vw;
     font-weight: 900;
   }
 }
 @media (max-width: 800px) {
-  .navPop {
+  .navBar .navPop {
     font-size: 3vw;
     font-weight: 900;
   }
@@ -322,31 +322,43 @@ html {
 #cityPop .cityRow .cityRowItem h1 {
   font-size: 3vw;
   padding-bottom: 1%;
+  color: black;
 }
 .modal-content {
   border-radius: 30px;
 }
-.partnerRow {
+#partnerPop h3 {
+  font-size: 2vw;
+  margin-bottom: 10%;
+  color: black;
+}
+@media (max-width: 1200px) {
+  #partnerPop h3 {
+    font-size: 4vw;
+  }
+}
+#partnerPop .partnerRow {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20px;
 }
 @media (max-width: 800px) {
-  .partnerRow {
+  #partnerPop .partnerRow {
     display: flex;
     flex-direction: column;
   }
 }
-.partnerRow .partnerRowItem img {
+#partnerPop .partnerRow .partnerRowItem img {
   width: 300px;
 }
 @media (max-width: 800px) {
-  .partnerRow .partnerRowItem img {
+  #partnerPop .partnerRow .partnerRowItem img {
     margin-top: 2%;
   }
 }
-.aboutTop {
+#aboutModal .aboutTop {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -354,36 +366,65 @@ html {
   text-align: center;
   border-bottom: 2px solid black;
 }
-.aboutTop h3 {
+#aboutModal .aboutTop h3 {
   font-size: 5vh;
+  color: black;
 }
-.aboutTop p {
+#aboutModal .aboutTop p {
   font-size: 2vh;
+  color: black;
 }
-.aboutRow {
+#aboutModal .aboutRow {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 800px) {
-  .aboutRow {
+  #aboutModal .aboutRow {
     display: flex;
     flex-direction: column;
   }
 }
-.aboutRow .Bio {
+#aboutModal .aboutRow .Bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2vh;
+  color: black;
+  width: 30%;
   text-align: center;
 }
-.aboutRow .Bio img {
+@media (max-width: 800px) {
+  #aboutModal .aboutRow .Bio {
+    width: 80%;
+  }
+}
+#aboutModal .aboutRow .Bio img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+#contactPop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#contactPop h3 {
+  font-size: 3vw;
+}
+#contactPop p {
+  font-size: 1vw;
+  font-weight: 900;
+}
+#contactPop .contactUsForm {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
 }
 .leftDesktop {
   width: 73%;
@@ -406,6 +447,80 @@ html {
     height: 32%;
   }
 }
+.leftDesktop #mainImage {
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: 90%;
+  padding: 0;
+  margin: 0;
+}
+.leftDesktop .mainHeader {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 72%;
+}
+.leftDesktop .mainHeader .singleCoMaker {
+  width: 11%;
+  margin-left: 8%;
+  position: relative;
+  -webkit-animation: cityComaker 10s infinite;
+  animation: cityComaker 10s infinite 5s paused;
+}
+@media (max-width: 800px) {
+  .leftDesktop .mainHeader .singleCoMaker {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .leftDesktop .mainHeader .singleCoMaker {
+    display: none;
+  }
+}
+.leftDesktop .mainHeader .bigHeader {
+  opacity: 0.23;
+  z-index: 4;
+  width: 100%;
+  max-width: 100%;
+  height: 21.5rem;
+  font-family: "Segoe UI";
+  font-size: 12.5vw;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 26.5rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+@media (max-width: 500px) {
+  .leftDesktop .mainHeader .bigHeader {
+    color: white;
+  }
+}
+.leftDesktop .mainHeader .miniHeader {
+  z-index: 4;
+  font-family: "Segoe UI";
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 4rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 12%;
+}
+@media (max-width: 800px) {
+  .leftDesktop .mainHeader .miniHeader {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .leftDesktop .mainHeader .miniHeader {
+    display: none;
+  }
+}
 .leftDesktop .issuesSolved {
   display: flex;
   flex-direction: row;
@@ -425,80 +540,6 @@ html {
 .leftDesktop .issuesSolved h1 {
   max-height: inherit;
   padding: 0;
-}
-.singleCoMaker {
-  width: 11%;
-  margin-left: 8%;
-  position: relative;
-  -webkit-animation: cityComaker 10s infinite;
-  animation: cityComaker 10s infinite 5s paused;
-}
-@media (max-width: 800px) {
-  .singleCoMaker {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .singleCoMaker {
-    display: none;
-  }
-}
-#mainImage {
-  position: relative;
-  z-index: -10;
-  width: 100%;
-  height: 90%;
-  padding: 0;
-  margin: 0;
-}
-.mainHeader {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  width: 72%;
-}
-.mainHeader .bigHeader {
-  opacity: 0.23;
-  z-index: 4;
-  width: 100%;
-  max-width: 100%;
-  height: 21.5rem;
-  font-family: "Segoe UI";
-  font-size: 12.5vw;
-  font-style: italic;
-  font-weight: 900;
-  line-height: 26.5rem;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  white-space: nowrap;
-}
-@media (max-width: 500px) {
-  .mainHeader .bigHeader {
-    color: white;
-  }
-}
-.mainHeader .miniHeader {
-  z-index: 4;
-  font-family: "Segoe UI";
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 600;
-  line-height: 4rem;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  margin-left: 12%;
-}
-@media (max-width: 800px) {
-  .mainHeader .miniHeader {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .mainHeader .miniHeader {
-    display: none;
-  }
 }
 .rightDesktop {
   width: 27%;
@@ -647,7 +688,7 @@ html {
   font-size: 1vw;
   text-align: center;
   font-family: "Palatino Linotype";
-  line-height: 2vw;
+  line-height: 2vw 1vh;
   max-height: inherit;
 }
 @media (max-width: 800px) {
