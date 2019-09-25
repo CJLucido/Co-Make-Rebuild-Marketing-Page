@@ -424,7 +424,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
+}
+#contactPop .contactUsForm .contactButton {
+  width: 50%;
+  height: 2vh;
+  font-size: 1vw;
 }
 .leftDesktop {
   width: 73%;
