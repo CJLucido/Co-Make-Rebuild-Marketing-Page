@@ -10,7 +10,6 @@ html {
   width: 100%;
 }
 
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -21,8 +20,8 @@ html {
   width: 100%; /* Full width */
   height: 90%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   .noBorder();
 }
 
@@ -48,4 +47,63 @@ html {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+#cityPop {
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .cityPopHeader {
+    font-size: 4vw;
+  }
+  .cityRow {
+    .display(row, space-around, center);
+    .cityRowItem {
+      .display(column, center, center);
+      h1 {
+        font-size: 2vw;
+      }
+    }
+  }
+}
+
+.modal-content {
+  border-radius: 30px;
+}
+
+.partnerRow {
+  .display(row, space-around, center);
+  .partnerRowItem {
+    img {
+      width: 300px;
+    }
+  }
+}
+
+.aboutTop {
+  .display(column, center, center);
+  text-align: center;
+  border-bottom: 2px solid black;
+  h3 {
+    font-size: 5vh;
+  }
+  p {
+    font-size: 2vh;
+  }
+}
+
+.aboutRow {
+  .display(row, space-around, center);
+  .Bio {
+    .display(column, center, center);
+    padding: 2vh;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    text-align: center;
+  }
 }
