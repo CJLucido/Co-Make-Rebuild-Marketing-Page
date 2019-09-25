@@ -156,6 +156,20 @@ img {
   align-items: center;
   height: 100vh;
 }
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+}
 a {
   color: black;
   text-decoration: none;
@@ -168,6 +182,65 @@ html {
 }
 .container {
   width: 100%;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self: flex-start;
+  position: absolute;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  padding-right: 0.7rem;
+  padding: 0.0001vw 0.0001vh 0.0001vw;
+  margin-top: 2.5rem;
+  margin-left: 5%;
+  background-color: #857774;
+  border-radius: 19px;
+  line-height: 4rem;
+  z-index: 5;
+  opacity: 0.7;
+}
+@media (max-width: 500px) {
+  .navBar {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 800px) {
+  .navBar {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.navPop {
+  z-index: 5;
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Palatino Linotype";
+  padding: 0.007vw 0.007vh 0.005vw;
+  white-space: nowrap;
+}
+.navPop:hover {
+  color: #fe876d;
+}
+@media (max-width: 500px) {
+  .navPop {
+    font-size: 3vw;
+    font-weight: 900;
+  }
+}
+@media (max-width: 800px) {
+  .navPop {
+    font-size: 3vw;
+    font-weight: 900;
+  }
 }
 /* The Modal (background) */
 .modal {
@@ -194,11 +267,11 @@ html {
 }
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #857774;
   margin: 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 2px solid black;
   width: 80%;
   /* Could be more or less, depending on screen size */
 }
@@ -229,14 +302,26 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  #cityPop .cityRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #cityPop .cityRow .cityRowItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  #cityPop .cityRow .cityRowItem {
+    margin: 3% auto;
+  }
+}
 #cityPop .cityRow .cityRowItem h1 {
-  font-size: 2vw;
+  font-size: 3vw;
+  padding-bottom: 1%;
 }
 .modal-content {
   border-radius: 30px;
@@ -247,8 +332,19 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .partnerRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .partnerRow .partnerRowItem img {
   width: 300px;
+}
+@media (max-width: 800px) {
+  .partnerRow .partnerRowItem img {
+    margin-top: 2%;
+  }
 }
 .aboutTop {
   display: flex;
@@ -269,6 +365,12 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .aboutRow {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .aboutRow .Bio {
   display: flex;
@@ -291,6 +393,18 @@ html {
   align-items: center;
   max-height: 100vh;
   height: 100vh;
+}
+@media (max-width: 800px) {
+  .leftDesktop {
+    width: 100%;
+    height: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .leftDesktop {
+    width: 100%;
+    height: 32%;
+  }
 }
 .leftDesktop .issuesSolved {
   display: flex;
@@ -317,7 +431,17 @@ html {
   margin-left: 8%;
   position: relative;
   -webkit-animation: cityComaker 10s infinite;
-  animation: cityComaker 10s  infinite 5s paused;
+  animation: cityComaker 10s infinite 5s paused;
+}
+@media (max-width: 800px) {
+  .singleCoMaker {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .singleCoMaker {
+    display: none;
+  }
 }
 #mainImage {
   position: relative;
@@ -349,6 +473,11 @@ html {
   margin: 0;
   white-space: nowrap;
 }
+@media (max-width: 500px) {
+  .mainHeader .bigHeader {
+    color: white;
+  }
+}
 .mainHeader .miniHeader {
   z-index: 4;
   font-family: "Segoe UI";
@@ -361,18 +490,63 @@ html {
   margin: 0;
   margin-left: 12%;
 }
+@media (max-width: 800px) {
+  .mainHeader .miniHeader {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .mainHeader .miniHeader {
+    display: none;
+  }
+}
 .rightDesktop {
   width: 27%;
+  border-left: 0.5vw solid black;
   background: #875140;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
+@media (max-width: 1200px) {
+  .rightDesktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 .rightDesktop .topLogo {
-  width: 40%;
-  margin: 5% auto 0;
+  width: 60%;
+  margin: 5% auto;
+}
+@media (max-width: 1200px) {
+  .rightDesktop .topLogo {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .topLogo {
+    width: 25%;
+    margin: 2% auto;
+  }
 }
 .rightDesktop .textBox {
   display: flex;
@@ -385,15 +559,36 @@ html {
   font-family: "Palatino Linotype";
   font-weight: 900;
   width: 90%;
-  height: 25%;
+  height: 15vw;
   padding: 5% 0;
   margin: 5% auto 0;
+}
+@media (max-width: 800px) {
+  .rightDesktop .textBox {
+    height: 25%;
+    margin: 2% auto;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .textBox {
+    height: 30%;
+  }
 }
 .rightDesktop .textBox h2 {
   font-size: 2vw;
   text-align: center;
   padding: 5% 0;
   width: 90%;
+}
+@media (max-width: 800px) {
+  .rightDesktop .textBox h2 {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .textBox h2 {
+    font-size: 8vw;
+  }
 }
 .rightDesktop .testimonials {
   display: flex;
@@ -408,12 +603,44 @@ html {
   padding: 0 0 0 2.5%;
   margin: 5% auto;
 }
+@media (max-width: 800px) {
+  .rightDesktop .testimonials {
+    height: 25%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .testimonials {
+    height: 30%;
+  }
+}
 .rightDesktop .testimonials img {
   width: 40%;
   border-radius: 100px;
-  border: 4px solid white;
+  border: 2px solid white;
   height: 45%;
   margin: 5% auto 0;
+}
+@media (max-width: 1200px) {
+  .rightDesktop .testimonials img {
+    border: 1px solid white;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .testimonials img {
+    border: 1px solid white;
+    height: 80%;
+    margin: auto 0;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .testimonials img {
+    border: 1px solid white;
+  }
 }
 .rightDesktop .testimonials p {
   width: 80%;
@@ -423,14 +650,40 @@ html {
   line-height: 2vw;
   max-height: inherit;
 }
+@media (max-width: 800px) {
+  .rightDesktop .testimonials p {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .testimonials p {
+    font-size: 6vw;
+    line-height: 5vw;
+  }
+}
 .rightDesktop .signUpButton {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 20vh;
+  height: 12vw;
   margin: 0;
+}
+@media (max-width: 800px) {
+  .rightDesktop .signUpButton {
+    height: 20%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-raound;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .signUpButton {
+    height: 15%;
+    margin-top: 10vw;
+  }
 }
 .rightDesktop .signUpButton button {
   display: flex;
@@ -448,44 +701,37 @@ html {
   width: 100%;
   height: 20vh;
 }
+@media (max-width: 1200px) {
+  .rightDesktop .signUpButton button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 4vw;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .signUpButton button {
+    display: flex;
+    flex-direction: row;
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .signUpButton button {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+}
 .rightDesktop .signUpButton button img {
   width: 20%;
 }
 .rightDesktop button:hover {
   background: #857774;
-}
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-self: flex-start;
-  position: absolute;
-  width: 50%;
-  padding: 0;
-  margin: 0;
-  padding-right: 0.7rem;
-  padding: 0.0001vw 0.0001vh 0.0001vw;
-  margin-top: 2.5rem;
-  margin-left: 5%;
-  background-color: #857774;
-  border-radius: 19px;
-  line-height: 4rem;
-  z-index: 5;
-  opacity: 0.7;
-}
-.navPop {
-  z-index: 5;
-  cursor: pointer;
-  width: 25%;
-  text-align: center;
-  font-size: 1vw;
-  font-family: "Palatino Linotype";
-  padding: 0.007vw 0.007vh 0.005vw;
-  white-space: nowrap;
-}
-.navPop:hover {
-  color: #fe876d;
 }
 @-webkit-keyframes cityComaker {
   from {

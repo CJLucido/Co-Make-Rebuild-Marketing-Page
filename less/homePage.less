@@ -4,12 +4,20 @@
   .display(column, flex-start, center);
   max-height: 100vh;
   height: 100vh;
+  @media @tablet {
+    width: 100%;
+    height: 45%;
+  }
+  @media @phone {
+    width: 100%;
+    height: 32%;
+  }
 
   .issuesSolved {
     .display(row, space-between, center);
     align-items: center;
     width: 100%;
-    padding: .5vw .5vh 0vw; //changed for responsiveness
+    padding: 0.5vw 0.5vh 0vw; //changed for responsiveness
     color: #a89996;
     font-family: Tahoma;
     font-size: 3.5vw;
@@ -31,7 +39,13 @@
   margin-left: 8%;
   position: relative;
   -webkit-animation: cityComaker 10s infinite;
-  animation: cityComaker 10s  infinite 5s paused;
+  animation: cityComaker 10s infinite 5s paused;
+  @media @tablet {
+    display: none;
+  }
+  @media @phone {
+    display: none;
+  }
 }
 
 #mainImage {
@@ -62,6 +76,9 @@
     text-align: center;
     .noBorder();
     white-space: nowrap;
+    @media @phone {
+      color: white;
+    }
   } //end of bigHeader
 
   .miniHeader {
@@ -74,6 +91,12 @@
     text-align: center;
     .noBorder();
     margin-left: 12%; //move left and right
+    @media @tablet {
+      display: none;
+    }
+    @media @phone {
+      display: none;
+    }
   }
 } //end of mainHeader
 
@@ -81,66 +104,147 @@
 
 .rightDesktop {
   width: 27%;
-  background: #875140;
-  .display(column, center, center);
+  border-left: 0.5vw solid black;
+  background: @mainColor;
+  .display(column, space-around, center);
   height: 100%;
   //max-height: 100vh;
+  @media @between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  @media @tablet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  @media @phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
   .topLogo {
-    width: 40%;
-    margin: 5% auto 0;
+    width: 60%;
+    margin: 5% auto;
+    @media @between {
+      width: 65%;
+    }
+    @media @tablet {
+      width: 25%;
+      margin: 2% auto;
+    }
   }
   .textBox {
     .display(row, center, center);
-    background: #857774;
+    background: @textBoxColor;
     border-radius: 30px;
     border: 3px solid black;
-    font-family: "Palatino Linotype";
+    font-family: @mainFont;
     font-weight: 900;
     width: 90%;
-    height: 25%;
+    height: 15vw;
     padding: 5% 0;
     margin: 5% auto 0;
+    @media @tablet {
+      height: 25%;
+      margin: 2% auto;
+    }
+    @media @phone {
+      height: 30%;
+    }
+
     h2 {
       font-size: 2vw; //changed from 6
       text-align: center;
       padding: 5% 0;
       width: 90%;
+      @media @tablet {
+        font-size: 6vw;
+      }
+      @media @phone {
+        font-size: 8vw;
+      }
     }
   }
 
   .testimonials {
     .display(column, space-around, center);
-    background: #857774;
+    background: @textBoxColor;
     border-radius: 30px;
     border: 3px solid black;
     width: 90%;
     height: 15vw;
     padding: 0 0 0 2.5%;
     margin: 5% auto;
+    @media @tablet {
+      height: 25%;
+      margin: 2% auto;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-around;
+    }
+    @media @phone {
+      height: 30%;
+    }
+
     img {
       width: 40%;
       border-radius: 100px;
-      border: 4px solid white;
+      border: 2px solid white;
       height: 45%;
-      margin: 5% auto 0;;
+      margin: 5% auto 0;
+      @media @between {
+        border: 1px solid white;
+      }
+      @media @tablet {
+        border: 1px solid white;
+        height: 80%;
+        margin: auto 0;
+      }
+      @media @phone {
+        border: 1px solid white;
+      }
     }
     p {
       width: 80%;
       //height:50%;
       font-size: 1vw; //changed from 3.5
       text-align: center;
-      font-family: "Palatino Linotype";
+      font-family: @mainFont;
       line-height: 2vw;
       max-height: inherit;
+      @media @tablet {
+        font-size: 4vw;
+        line-height: 5vw;
+      }
+      @media @phone {
+        font-size: 6vw;
+        line-height: 5vw;
+      }
     }
   }
 
   .signUpButton {
     .display(row, center, center);
     width: 90%;
-    height: 20vh;
+    height: 12vw;
     margin: 0; //made bottom zero px from 20
+    @media @tablet {
+      height: 20%;
+      margin: 2% auto;
+      display: flex;
+      justify-content: space-raound;
+    }
+    @media @phone {
+      height: 15%;
+      margin-top: 10vw;
+    }
+
     button {
       .display(row, space-around, center);
       // margin: 10% 0; //this is not being contained by the right container height
@@ -149,12 +253,33 @@
       border: 3px solid black;
       border-radius: 30px;
       font-size: 3vw;
-      font-family: "Palatino Linotype";
+      font-family: @mainFont;
       font-weight: 900;
       line-height: 3vw;
       width: 100%;
       //height: 80%;
       height: 20vh;
+      @media @between {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        font-size: 4vw;
+      }
+      @media @tablet {
+        display: flex;
+        flex-direction: row;
+        font-size: 7vw;
+        line-height: 7vw;
+      }
+      @media @phone {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        font-size: 10vw;
+        line-height: 8vw;
+      }
+
       img {
         width: 20%;
       }
@@ -167,39 +292,3 @@
 } ////////// Right Container
 
 ////// NavBar ///////
-
-.navBar {
-  .display(row, space-around, center);
-  align-self: flex-start;
-  position: absolute;
-  width: 50%;
-  .noBorder();
-  padding-right: 0.7rem;
-  padding: .0001vw .0001vh .0001vw;
-  margin-top: 2.5rem;
-  margin-left: 5%;
-  background-color: #857774;
-  border-radius: 19px;
-  line-height: 4rem;
-  z-index:5;
-  opacity: .7;
-}
-
-.navPop {
-  z-index: 5;
-  cursor: pointer;
-  width: 25%;
-  text-align: center;
-  font-size: 1vw;
-  font-family: "Palatino Linotype";
-  padding: .007vw .007vh .005vw;
-  white-space: nowrap;
-
-  &:hover {
-    color: #fe876d;
-  }
-
-
-}
-
-
