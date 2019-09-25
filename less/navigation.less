@@ -35,28 +35,27 @@ html {
     display: flex;
     justify-content: space-evenly;
   }
-}
+  .navPop {
+    z-index: 5;
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+    font-size: 1vw;
+    font-family: "Palatino Linotype";
+    padding: 0.007vw 0.007vh 0.005vw;
+    white-space: nowrap;
 
-.navPop {
-  z-index: 5;
-  cursor: pointer;
-  width: 25%;
-  text-align: center;
-  font-size: 1vw;
-  font-family: "Palatino Linotype";
-  padding: 0.007vw 0.007vh 0.005vw;
-  white-space: nowrap;
-
-  &:hover {
-    color: #fe876d;
-  }
-  @media @phone {
-    font-size: 3vw;
-    font-weight: 900;
-  }
-  @media @tablet {
-    font-size: 3vw;
-    font-weight: 900;
+    &:hover {
+      color: #fe876d;
+    }
+    @media @phone {
+      font-size: 3vw;
+      font-weight: 900;
+    }
+    @media @tablet {
+      font-size: 3vw;
+      font-weight: 900;
+    }
   }
 }
 
@@ -122,6 +121,7 @@ html {
       h1 {
         font-size: 3vw;
         padding-bottom: 1%;
+        color: black;
       }
     }
   }
@@ -130,49 +130,82 @@ html {
 .modal-content {
   border-radius: 30px;
 }
-
-.partnerRow {
-  .display(row, space-around, center);
-  @media @tablet {
-    display: flex;
-    flex-direction: column;
+#partnerPop {
+  h3 {
+    font-size: 2vw;
+    margin-bottom: 10%;
+    color: black;
+    @media @between {
+      font-size: 4vw;
+    }
   }
-  .partnerRowItem {
-    img {
-      width: 300px;
-      @media @tablet {
-        margin-top: 2%;
+  .partnerRow {
+    .display(row, space-around, center);
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    margin-bottom: 20px;
+    .partnerRowItem {
+      img {
+        width: 300px;
+        @media @tablet {
+          margin-top: 2%;
+        }
       }
     }
   }
 }
 
-.aboutTop {
-  .display(column, center, center);
-  text-align: center;
-  border-bottom: 2px solid black;
-  h3 {
-    font-size: 5vh;
+#aboutModal {
+  .aboutTop {
+    .display(column, center, center);
+    text-align: center;
+    border-bottom: 2px solid black;
+    h3 {
+      font-size: 5vh;
+      color: black;
+    }
+    p {
+      font-size: 2vh;
+      color: black;
+    }
   }
-  p {
-    font-size: 2vh;
+
+  .aboutRow {
+    .display(row, space-around, center);
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    .Bio {
+      .display(column, center, center);
+      padding: 2vh;
+      color: black;
+      width: 30%;
+      @media @tablet {
+        width: 80%;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      text-align: center;
+    }
   }
 }
-
-.aboutRow {
+#contactPop {
   .display(row, space-around, center);
-  @media @tablet {
-    display: flex;
-    flex-direction: column;
+  h3 {
+    font-size: 3vw;
   }
-  .Bio {
-    .display(column, center, center);
-    padding: 2vh;
-    img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-    }
-    text-align: center;
+  p {
+    font-size: 1vw;
+    font-weight: 900;
+  }
+  .contactUsForm {
+    width: 20vw;
+    .display(column, center, space-around);
   }
 }
