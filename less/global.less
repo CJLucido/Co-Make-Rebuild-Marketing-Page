@@ -33,6 +33,15 @@ img {
 .container {
   .display(row, space-between, center);
   height: 100vh;
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 a {

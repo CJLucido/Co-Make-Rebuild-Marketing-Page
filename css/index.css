@@ -156,6 +156,19 @@ img {
   align-items: center;
   height: 100vh;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 a {
   color: black;
   text-decoration: none;
@@ -168,6 +181,52 @@ html {
 }
 .container {
   width: 100%;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self: flex-start;
+  position: absolute;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  padding-right: 0.7rem;
+  padding: 0.0001vw 0.0001vh 0.0001vw;
+  margin-top: 2.5rem;
+  margin-left: 5%;
+  background-color: #857774;
+  border-radius: 19px;
+  line-height: 4rem;
+  z-index: 5;
+  opacity: 0.7;
+}
+@media (max-width: 500px) {
+  .navBar {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.navPop {
+  z-index: 5;
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Palatino Linotype";
+  padding: 0.007vw 0.007vh 0.005vw;
+  white-space: nowrap;
+}
+.navPop:hover {
+  color: #fe876d;
+}
+@media (max-width: 500px) {
+  .navPop {
+    font-size: 3vw;
+    font-weight: 900;
+  }
 }
 /* The Modal (background) */
 .modal {
@@ -292,6 +351,17 @@ html {
   max-height: 100vh;
   height: 100vh;
 }
+@media (max-width: 500px) {
+  .leftDesktop {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .leftDesktop {
+    width: 100%;
+  }
+}
 .leftDesktop .issuesSolved {
   display: flex;
   flex-direction: row;
@@ -317,7 +387,12 @@ html {
   margin-left: 8%;
   position: relative;
   -webkit-animation: cityComaker 10s infinite;
-  animation: cityComaker 10s  infinite 5s paused;
+  animation: cityComaker 10s infinite 5s paused;
+}
+@media (max-width: 500px) {
+  .singleCoMaker {
+    display: none;
+  }
 }
 #mainImage {
   position: relative;
@@ -361,6 +436,11 @@ html {
   margin: 0;
   margin-left: 12%;
 }
+@media (max-width: 500px) {
+  .mainHeader .miniHeader {
+    display: none;
+  }
+}
 .rightDesktop {
   width: 27%;
   background: #875140;
@@ -369,6 +449,19 @@ html {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .rightDesktop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop {
+    width: 100%;
+  }
 }
 .rightDesktop .topLogo {
   width: 40%;
@@ -389,11 +482,21 @@ html {
   padding: 5% 0;
   margin: 5% auto 0;
 }
+@media (max-width: 500px) {
+  .rightDesktop .textBox {
+    height: 30%;
+  }
+}
 .rightDesktop .textBox h2 {
   font-size: 2vw;
   text-align: center;
   padding: 5% 0;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .rightDesktop .textBox h2 {
+    font-size: 8vw;
+  }
 }
 .rightDesktop .testimonials {
   display: flex;
@@ -408,12 +511,23 @@ html {
   padding: 0 0 0 2.5%;
   margin: 5% auto;
 }
+@media (max-width: 500px) {
+  .rightDesktop .testimonials {
+    height: 30%;
+    margin-top: 10vw;
+  }
+}
 .rightDesktop .testimonials img {
   width: 40%;
   border-radius: 100px;
   border: 4px solid white;
   height: 45%;
   margin: 5% auto 0;
+}
+@media (max-width: 500px) {
+  .rightDesktop .testimonials img {
+    border: 1px solid white;
+  }
 }
 .rightDesktop .testimonials p {
   width: 80%;
@@ -423,6 +537,12 @@ html {
   line-height: 2vw;
   max-height: inherit;
 }
+@media (max-width: 500px) {
+  .rightDesktop .testimonials p {
+    font-size: 6vw;
+    line-height: 5vw;
+  }
+}
 .rightDesktop .signUpButton {
   display: flex;
   flex-direction: row;
@@ -431,6 +551,12 @@ html {
   width: 90%;
   height: 20vh;
   margin: 0;
+}
+@media (max-width: 500px) {
+  .rightDesktop .signUpButton {
+    height: 10%;
+    margin-top: 10vw;
+  }
 }
 .rightDesktop .signUpButton button {
   display: flex;
@@ -448,44 +574,18 @@ html {
   width: 100%;
   height: 20vh;
 }
+@media (max-width: 500px) {
+  .rightDesktop .signUpButton button {
+    height: 100%;
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+}
 .rightDesktop .signUpButton button img {
   width: 20%;
 }
 .rightDesktop button:hover {
   background: #857774;
-}
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-self: flex-start;
-  position: absolute;
-  width: 50%;
-  padding: 0;
-  margin: 0;
-  padding-right: 0.7rem;
-  padding: 0.0001vw 0.0001vh 0.0001vw;
-  margin-top: 2.5rem;
-  margin-left: 5%;
-  background-color: #857774;
-  border-radius: 19px;
-  line-height: 4rem;
-  z-index: 5;
-  opacity: 0.7;
-}
-.navPop {
-  z-index: 5;
-  cursor: pointer;
-  width: 25%;
-  text-align: center;
-  font-size: 1vw;
-  font-family: "Palatino Linotype";
-  padding: 0.007vw 0.007vh 0.005vw;
-  white-space: nowrap;
-}
-.navPop:hover {
-  color: #fe876d;
 }
 @-webkit-keyframes cityComaker {
   from {
