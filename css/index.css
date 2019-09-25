@@ -215,6 +215,74 @@ html {
   text-decoration: none;
   cursor: pointer;
 }
+#cityPop img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+#cityPop .cityPopHeader {
+  font-size: 4vw;
+}
+#cityPop .cityRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#cityPop .cityRow .cityRowItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cityPop .cityRow .cityRowItem h1 {
+  font-size: 2vw;
+}
+.modal-content {
+  border-radius: 30px;
+}
+.partnerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.partnerRow .partnerRowItem img {
+  width: 300px;
+}
+.aboutTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+.aboutTop h3 {
+  font-size: 5vh;
+}
+.aboutTop p {
+  font-size: 2vh;
+}
+.aboutRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutRow .Bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  text-align: center;
+}
+.aboutRow .Bio img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 .leftDesktop {
   width: 73%;
   display: flex;
