@@ -77,10 +77,10 @@ html {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: @textBoxColor;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 2px solid black;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
@@ -110,10 +110,18 @@ html {
   }
   .cityRow {
     .display(row, space-around, center);
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+    }
     .cityRowItem {
       .display(column, center, center);
+      @media @tablet {
+        margin: 3% auto;
+      }
       h1 {
-        font-size: 2vw;
+        font-size: 3vw;
+        padding-bottom: 1%;
       }
     }
   }
@@ -125,9 +133,16 @@ html {
 
 .partnerRow {
   .display(row, space-around, center);
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+  }
   .partnerRowItem {
     img {
       width: 300px;
+      @media @tablet {
+        margin-top: 2%;
+      }
     }
   }
 }
@@ -146,6 +161,10 @@ html {
 
 .aboutRow {
   .display(row, space-around, center);
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+  }
   .Bio {
     .display(column, center, center);
     padding: 2vh;

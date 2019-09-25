@@ -156,18 +156,18 @@ img {
   align-items: center;
   height: 100vh;
 }
-@media (max-width: 500px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-  }
-}
 @media (max-width: 800px) {
   .container {
     display: flex;
     flex-direction: column;
     height: 1200px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
   }
 }
 a {
@@ -267,11 +267,11 @@ html {
 }
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #857774;
   margin: 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 2px solid black;
   width: 80%;
   /* Could be more or less, depending on screen size */
 }
@@ -302,14 +302,26 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  #cityPop .cityRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #cityPop .cityRow .cityRowItem {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  #cityPop .cityRow .cityRowItem {
+    margin: 3% auto;
+  }
+}
 #cityPop .cityRow .cityRowItem h1 {
-  font-size: 2vw;
+  font-size: 3vw;
+  padding-bottom: 1%;
 }
 .modal-content {
   border-radius: 30px;
@@ -320,8 +332,19 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .partnerRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .partnerRow .partnerRowItem img {
   width: 300px;
+}
+@media (max-width: 800px) {
+  .partnerRow .partnerRowItem img {
+    margin-top: 2%;
+  }
 }
 .aboutTop {
   display: flex;
@@ -342,6 +365,12 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .aboutRow {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .aboutRow .Bio {
   display: flex;
@@ -365,16 +394,16 @@ html {
   max-height: 100vh;
   height: 100vh;
 }
-@media (max-width: 500px) {
-  .leftDesktop {
-    width: 100%;
-    height: 32%;
-  }
-}
 @media (max-width: 800px) {
   .leftDesktop {
     width: 100%;
     height: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .leftDesktop {
+    width: 100%;
+    height: 32%;
   }
 }
 .leftDesktop .issuesSolved {
@@ -404,12 +433,12 @@ html {
   -webkit-animation: cityComaker 10s infinite;
   animation: cityComaker 10s infinite 5s paused;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .singleCoMaker {
     display: none;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .singleCoMaker {
     display: none;
   }
@@ -444,6 +473,11 @@ html {
   margin: 0;
   white-space: nowrap;
 }
+@media (max-width: 500px) {
+  .mainHeader .bigHeader {
+    color: white;
+  }
+}
 .mainHeader .miniHeader {
   z-index: 4;
   font-family: "Segoe UI";
@@ -456,12 +490,12 @@ html {
   margin: 0;
   margin-left: 12%;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .mainHeader .miniHeader {
     display: none;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .mainHeader .miniHeader {
     display: none;
   }
@@ -476,12 +510,11 @@ html {
   align-items: center;
   height: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   .rightDesktop {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 }
 @media (max-width: 800px) {
@@ -492,11 +525,12 @@ html {
     justify-content: flex-start;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 500px) {
   .rightDesktop {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 }
 .rightDesktop .topLogo {
@@ -525,19 +559,19 @@ html {
   font-family: "Palatino Linotype";
   font-weight: 900;
   width: 90%;
-  height: 25%;
+  height: 15vw;
   padding: 5% 0;
   margin: 5% auto 0;
+}
+@media (max-width: 800px) {
+  .rightDesktop .textBox {
+    height: 25%;
+    margin: 2% auto;
+  }
 }
 @media (max-width: 500px) {
   .rightDesktop .textBox {
     height: 30%;
-  }
-}
-@media (max-width: 800px) {
-  .rightDesktop .textBox {
-    height: 30%;
-    margin: 2% auto;
   }
 }
 .rightDesktop .textBox h2 {
@@ -546,14 +580,14 @@ html {
   padding: 5% 0;
   width: 90%;
 }
+@media (max-width: 800px) {
+  .rightDesktop .textBox h2 {
+    font-size: 6vw;
+  }
+}
 @media (max-width: 500px) {
   .rightDesktop .textBox h2 {
     font-size: 8vw;
-  }
-}
-@media (max-width: 800px) {
-  .rightDesktop .textBox h2 {
-    font-size: 7vw;
   }
 }
 .rightDesktop .testimonials {
@@ -569,14 +603,9 @@ html {
   padding: 0 0 0 2.5%;
   margin: 5% auto;
 }
-@media (max-width: 500px) {
-  .rightDesktop .testimonials {
-    height: 30%;
-  }
-}
 @media (max-width: 800px) {
   .rightDesktop .testimonials {
-    height: 20%;
+    height: 25%;
     margin: 2% auto;
     display: flex;
     flex-direction: row;
@@ -584,14 +613,19 @@ html {
     justify-content: space-around;
   }
 }
+@media (max-width: 500px) {
+  .rightDesktop .testimonials {
+    height: 30%;
+  }
+}
 .rightDesktop .testimonials img {
   width: 40%;
   border-radius: 100px;
-  border: 4px solid white;
+  border: 2px solid white;
   height: 45%;
   margin: 5% auto 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   .rightDesktop .testimonials img {
     border: 1px solid white;
   }
@@ -603,7 +637,7 @@ html {
     margin: auto 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 500px) {
   .rightDesktop .testimonials img {
     border: 1px solid white;
   }
@@ -616,15 +650,15 @@ html {
   line-height: 2vw;
   max-height: inherit;
 }
-@media (max-width: 500px) {
-  .rightDesktop .testimonials p {
-    font-size: 6vw;
-    line-height: 5vw;
-  }
-}
 @media (max-width: 800px) {
   .rightDesktop .testimonials p {
     font-size: 4vw;
+    line-height: 5vw;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .testimonials p {
+    font-size: 6vw;
     line-height: 5vw;
   }
 }
@@ -634,18 +668,21 @@ html {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 20vh;
+  height: 12vw;
   margin: 0;
+}
+@media (max-width: 800px) {
+  .rightDesktop .signUpButton {
+    height: 20%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-raound;
+  }
 }
 @media (max-width: 500px) {
   .rightDesktop .signUpButton {
     height: 15%;
     margin-top: 10vw;
-  }
-}
-@media (max-width: 800px) {
-  .rightDesktop .signUpButton {
-    height: 20%;
   }
 }
 .rightDesktop .signUpButton button {
@@ -664,19 +701,6 @@ html {
   width: 100%;
   height: 20vh;
 }
-@media (max-width: 500px) {
-  .rightDesktop .signUpButton button {
-    height: 100%;
-    font-size: 10vw;
-    line-height: 8vw;
-  }
-}
-@media (max-width: 800px) {
-  .rightDesktop .signUpButton button {
-    font-size: 7vw;
-    line-height: 7vw;
-  }
-}
 @media (max-width: 1200px) {
   .rightDesktop .signUpButton button {
     display: flex;
@@ -684,6 +708,23 @@ html {
     justify-content: space-around;
     align-content: center;
     font-size: 4vw;
+  }
+}
+@media (max-width: 800px) {
+  .rightDesktop .signUpButton button {
+    display: flex;
+    flex-direction: row;
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+}
+@media (max-width: 500px) {
+  .rightDesktop .signUpButton button {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    font-size: 10vw;
+    line-height: 8vw;
   }
 }
 .rightDesktop .signUpButton button img {
