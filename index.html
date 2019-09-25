@@ -178,7 +178,7 @@
               <img src="..\Marketing-Page\images\Logo4.png" alt="Black and Decker logo">
             </div>
             <div class="partnerRowItem">
-              <img src="..\Marketing-Page\images\Logo5.png" alt="John Deere logo">
+              <img src="..\Marketing-Page\images\Logo 5.png" alt="John Deere logo">
             </div>
             <div class="partnerRowItem">
               <img src="..\Marketing-Page\images\Logo6.png" alt="Delta Constructions logo">
@@ -224,19 +224,19 @@
 
     <script>
       ///////////////// Get the modal
-      var modal = document.getElementById("cityModal");
+      var modal = document.getElementById("cityModal"); //points to the actual modal
       var modal2 = document.getElementById("aboutModal");
       var modal3 = document.getElementById("partnersModal");
       var modal4 = document.getElementById("contactModal");
 
       // Get the button that opens the modal
-      var btn = document.getElementById("cityPop");
+      var btn = document.getElementById("cityPop");//points to the span div
       var btn2 = document.getElementById("aboutPop");
       var btn3 = document.getElementById("partnersPop");
       var btn4 = document.getElementById("contactPop");
 
       // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
+      var span = document.getElementsByClassName("close")[0];//points to the "x" (&times as x because it symbolizes multiplication), the close class and pulls up the empty span (the modal reverts to hidden)
       var span2 = document.getElementsByClassName("close")[1];
       var span3 = document.getElementsByClassName("close")[2];
       var span4 = document.getElementsByClassName("close")[3];
@@ -244,29 +244,46 @@
       // When the user clicks on the button, open the modal
       btn.onclick = function() {
         modal.style.display = "block";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
       }
       btn2.onclick = function() {
         modal2.style.display = "block";
+        modal.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
       }
       btn3.onclick = function() {
         modal3.style.display = "block";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal4.style.display = "none";
       }
       btn4.onclick = function() {
         modal4.style.display = "block";
+        modal.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
       }
 
       // When the user clicks on <span> (x), close the modal
       span.onclick = function() {
         modal.style.display = "none";
+
       }
       span2.onclick = function() {
         modal2.style.display = "none";
+
       }
       span3.onclick = function() {
         modal3.style.display = "none";
+
       }
       span4.onclick = function() {
         modal4.style.display = "none";
+
+
       }
 
       // When the user clicks anywhere outside of the modal, close it
